@@ -1,2 +1,2 @@
 # Centaur
-Centaur, a framework for hybrid CPU-FPGA databases
+A framework for hybrid CPU-FPGA databases
