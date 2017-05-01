@@ -1,0 +1,87 @@
+set_global_assignment -name SEARCH_PATH $DOPPIO_OPS
+
+
+########################### Regex AFU ############################
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/regex/rtl/nlb_gfifo.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/regex/rtl/nlb_axififo.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/regex/rtl/fifo_async_1.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/regex/rtl/fifo_async_16.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/regex/rtl/fifo_async_256.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/regex/rtl/async_axififo.v
+set_global_assignment -name VHDL_FILE    $DOPPIO_OPS/regex/rtl/axis_register.vhd
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/regex/rtl/fifo_to_axis.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/regex/rtl/pg_smartshifter.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/regex/rtl/nlb_gram_sdp.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/regex/rtl/rem_decoder.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/regex/rtl/rem_halfrange.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/regex/rtl/rem_onestate.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/regex/rtl/rem_engines.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/regex/rtl/rem_engines_async.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/regex/rtl/rem_top_ff.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/regex/rtl/rem_top_ff_bsh.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/regex/rtl/mdb_stringreader.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/regex/rtl/mdb_batparser_string.v
+
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/regex/rtl/regex_mdb.v
+
+########################### Test Count AFU ############################
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/testcount/rtl/onesCounter.v
+set_global_assignment -name SYSTEMVERILOG_FILE $DOPPIO_OPS/testcount/rtl/testcount.sv
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/testcount/rtl/testcount_um.v
+
+########################### Copy AFU ############################
+
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/copy/rtl/copy.v
+
+########################### Percentage AFU ############################
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/percentage/rtl/reduction_tree.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/percentage/rtl/percentage.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/percentage/rtl/percentage_um.v
+
+########################### MULADD AFU ############################
+
+set_global_assignment -name SYSTEMVERILOG_FILE $DOPPIO_OPS/addmul/rtl/addmul.sv
+
+########################### Selection AFU ############################
+set_global_assignment -name VHDL_FILE $DOPPIO_OPS/selection/rtl/selection.vhd
+
+########################### Min Max Sum AFU ############################
+set_global_assignment -name VHDL_FILE $DOPPIO_OPS/minmaxsum/rtl/minmaxsum.vhd
+
+########################### SGD AFU ############################
+set_global_assignment -name VHDL_FILE $DOPPIO_OPS/sgd/rtl/simple_dual_port_ram.vhd
+set_global_assignment -name VHDL_FILE $DOPPIO_OPS/sgd/rtl/sgd.vhd
+set_global_assignment -name VHDL_FILE $DOPPIO_OPS/sgd/rtl/reorder.vhd
+set_global_assignment -name VHDL_FILE $DOPPIO_OPS/sgd/rtl/my_fp_mult.vhd
+set_global_assignment -name VHDL_FILE $DOPPIO_OPS/sgd/rtl/my_fp_converter27.vhd
+set_global_assignment -name VHDL_FILE $DOPPIO_OPS/sgd/rtl/my_fp_converter.vhd
+set_global_assignment -name VHDL_FILE $DOPPIO_OPS/sgd/rtl/my_fp_adder.vhd
+set_global_assignment -name VHDL_FILE $DOPPIO_OPS/sgd/rtl/my_fifo.vhd
+set_global_assignment -name VHDL_FILE $DOPPIO_OPS/sgd/rtl/hybrid_dot_product.vhd
+set_global_assignment -name VHDL_FILE $DOPPIO_OPS/sgd/rtl/gather.vhd
+set_global_assignment -name VHDL_FILE $DOPPIO_OPS/sgd/rtl/fp_vector_mult.vhd
+set_global_assignment -name VHDL_FILE $DOPPIO_OPS/sgd/rtl/fp_subtract_mult.vhd
+set_global_assignment -name VHDL_FILE $DOPPIO_OPS/sgd/rtl/fp_scalar_vector_mult.vhd
+set_global_assignment -name VHDL_FILE $DOPPIO_OPS/sgd/rtl/fixed_vector_subtract.vhd
+set_global_assignment -name VHDL_FILE $DOPPIO_OPS/sgd/rtl/fixed_adder_tree.vhd
+
+########################### SKYLINE AFU ############################
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/skyline/rtl/singleportbram.v
+
+set_global_assignment -name VHDL_FILE $DOPPIO_OPS/skyline/rtl/core.vhd
+set_global_assignment -name VHDL_FILE $DOPPIO_OPS/skyline/rtl/corepipe.vhd
+set_global_assignment -name VHDL_FILE $DOPPIO_OPS/skyline/rtl/conf.vhd
+
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/skyline/rtl/OutputTupleFilter.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/skyline/rtl/SkylineOutputFIFO.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/skyline/rtl/SkylineInputFIFO.v
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/skyline/rtl/skyline.v
+
+set_global_assignment -name VERILOG_FILE $DOPPIO_OPS/skyline/rtl/singleportbram_w.v
+
+set_global_assignment -name SYSTEMVERILOG_FILE $DOPPIO_OPS/skyline/rtl/core_wide.sv
+set_global_assignment -name SYSTEMVERILOG_FILE $DOPPIO_OPS/skyline/rtl/corepipe_wide.sv
+set_global_assignment -name SYSTEMVERILOG_FILE $DOPPIO_OPS/skyline/rtl/SkylineOutputFIFO_wide.sv
+set_global_assignment -name SYSTEMVERILOG_FILE $DOPPIO_OPS/skyline/rtl/SkylineInputFIFO_wide.sv
+set_global_assignment -name SYSTEMVERILOG_FILE $DOPPIO_OPS/skyline/rtl/SkylineInputFIFO_wide_full.sv
+set_global_assignment -name SYSTEMVERILOG_FILE $DOPPIO_OPS/skyline/rtl/skyline_wide.sv

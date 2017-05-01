@@ -1,0 +1,54 @@
+set_global_assignment -name VERILOG_MACRO "MAX_TRANSFER_SIZE_1=1"
+set_global_assignment -name SEARCH_PATH $CENTAUR_SRC
+
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/mem/spl_sdp_mem.v
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/mem/spl_pt_mem.v
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/mem/spl_fifo.v
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/mem/quick_fifo.v
+
+########################### IO Library Modules ############################
+
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/fthread/iolib/crb_consumer.v
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/fthread/iolib/crb_producer.v
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/fthread/iolib/order_module_backpressure.v
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/fthread/iolib/order_module_backpressure_wr.v
+
+##################### FPGA Core module and sub modules #####################
+
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/fthread_shell/fpga_setup.v
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/fthread_shell/csr_file.v
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/fthread_shell/job_queue.v
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/fthread_shell/pipeline_agent.v
+set_global_assignment -name SYSTEMVERILOG_FILE $CENTAUR_SRC/fthread_shell/jobs_reader.sv
+set_global_assignment -name SYSTEMVERILOG_FILE $CENTAUR_SRC/fthread_shell/job_distributor.sv
+set_global_assignment -name SYSTEMVERILOG_FILE $CENTAUR_SRC/fthread_shell/job_manager.sv
+set_global_assignment -name SYSTEMVERILOG_FILE $CENTAUR_SRC/fthread_shell/cmd_interpreter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE $CENTAUR_SRC/fthread_shell/cmd_processor.sv
+set_global_assignment -name SYSTEMVERILOG_FILE $CENTAUR_SRC/fthread_shell/fpga_core.sv
+
+########################### Data Arbitration modules ########################
+set_global_assignment -name SYSTEMVERILOG_FILE $CENTAUR_SRC/fthread_shell/RoundRobinArbitration.sv
+set_global_assignment -name SYSTEMVERILOG_FILE $CENTAUR_SRC/fthread_shell/BatchRoundRobinArbitration.sv
+set_global_assignment -name SYSTEMVERILOG_FILE $CENTAUR_SRC/fthread_shell/regulator.sv
+set_global_assignment -name SYSTEMVERILOG_FILE $CENTAUR_SRC/fthread_shell/data_arbiter.sv
+
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/fthread_shell/pt_module.v
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/fthread_shell/io_requester.v
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/fthread_shell/server_io.v
+
+########################### fthread Modules ########################
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/fthread/fifo_reader.v
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/fthread/fifo_writer.v
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/fthread/user_tx_rd_if.v
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/fthread/user_tx_wr_if.v
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/fthread/iolib/ReadConfigStruct.v
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/fthread/fthread_controller.v
+
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/fthread/fthread.v
+set_global_assignment -name VERILOG_FILE $CENTAUR_SRC/fthread/afu.v
+
+
+########################### Top Modules ########################
+set_global_assignment -name SYSTEMVERILOG_FILE $CENTAUR_SRC/fthread_shell/fpga_server.sv
+set_global_assignment -name SYSTEMVERILOG_FILE $CENTAUR_SRC/fpga_arch.sv
+set_global_assignment -name SYSTEMVERILOG_FILE $CENTAUR_SRC/cci_std_afu.sv

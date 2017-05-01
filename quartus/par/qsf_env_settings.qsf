@@ -1,0 +1,8 @@
+set MY_WORKDIR $::env(WORKDIR)
+set REL_RTL_SRC "/qpi"
+set QPI_RTL_SRC $MY_WORKDIR$REL_RTL_SRC
+set CENTAUR_SRC $::env(CENTAUR_HOME)/rtl
+set DOPPIO_OPS $::env(DOPPIO_HOME)/fpga/operators
+puts " Variable defined QPI_RTL_SRC: $QPI_RTL_SRC"
+puts " Variable defined CENTAUR_RTL_SRC: $CENTAUR_SRC"
+puts " Variable defined DOPPIO_OPS_SRC: $DOPPIO_OPS"

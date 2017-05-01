@@ -27,7 +27,7 @@ Clone Centaur and DoppioDB repositories to your workspace directory:
 	git clone https://github.com/fpgasystems/Centaur.git
 	git clone https://github.com/fpgasystems/doppiodb.git
 
-**Installation with DoppioDB**
+**Installation**
 
 set home directory to Centaur:
 
@@ -54,8 +54,37 @@ To run quartus and get a bitstream run the following
 	quartus par/ome2_ivt.qpf
 
 
-Installation without a database
+Using Centaur without a database
 ==============================================
+
+Clone Centaur repository to your workspace directory:
+
+	git clone https://github.com/fpgasystems/Centaur.git
+
+**Installation**
+
+set home directory to Centaur:
+
+	export CENTAUR_HOME=~/workspace/Centaur
+
+set up the Centaur to standalone
+
+	cd Centaur
+	bash standalone.sh 
+
+In ~/workspace/Centaur/app
+add your application to the app.cpp file
+
+run **make** to build your application. 
+Your application executable "app" is in ~/workspace/Centaur/app.
+
+**Run Quartus**
+
+To run quartus and get a bitstream run the following
+
+	cd ~/workspace/Centaur/quartus/
+	sh setup.sh
+	quartus par/ome2_ivt.qpf
 
 
 

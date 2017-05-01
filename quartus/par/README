@@ -1,0 +1,10 @@
+**Start Quartus project:**
+quartus ome2_ivt.qpf
+
+**Add new files**
+Files related to Centaur, add them to the file **qsf_spl_PAR_files.qsf**
+
+Operator files go into **qsf_afu_PAR_files.qsf**
+
+**DO NOT COMMIT YOUR VERSION OF ome2_ivt.qsf**
+
