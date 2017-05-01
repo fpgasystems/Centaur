@@ -2,8 +2,9 @@ General Information
 ===================================================
 Centaur is a framwork for hybrid databases on the Intel HARP machine v1.
 This git only contains the core components of Centaur. The database part of Centaur is in the "doppiodb" git repository. 
+
 The core components of Centaur can be used also for developing non-database applications. 
-Following we will describe how to use Centaur with a Database and without a database.
+Following we will describe how to use Centaur with and without a database.
 
 Pre-requisites
 ====================================
